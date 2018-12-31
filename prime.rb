@@ -1,8 +1,6 @@
 def prime?(x)
-Prime.each(x) do |prime|
+  (2..(x - 1)).each do |n|
+    return false if num % n == 0 
+  end
+  return true
 end
-end
-
-prime?(51)
-
-
